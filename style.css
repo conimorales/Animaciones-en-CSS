@@ -1,0 +1,75 @@
+#boton{
+    display: block;
+    padding: 20px;
+    background-color: rgba(33, 1, 122, 0.685);
+    color: white;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid rgb(39, 1, 255);
+    transition: border 500ms, background-color 3s, border-radius 2s;
+}
+#boton:hover{
+    border-radius: 15px;
+    background:pink;
+    border: 1px solid rgb(255, 2, 221);
+}
+#caja{
+    width: 250px;
+    height: 250px;
+    background: rgba(33, 1, 122, 0.685);
+    color: white;
+    border: 5px solid black;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes desplazamiento{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
+
+#caja2{
+    width: 250px;
+    height: 250px;
+    background: rgba(33, 1, 122, 0.685);
+    color: white;
+    border: 5px solid black;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    animation-name: desplazamiento2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes desplazamiento2{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+    }
+    75%{
+        background: pink;
+    }
+    77%{
+        border:  10px dashed red;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
